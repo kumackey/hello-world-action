@@ -4,4 +4,4 @@ WORKDIR /go/src/app
 COPY . .
 RUN go build -o action ./cmd
 
-ENTRYPOINT ["/entrypoint.sh"]
+ENTRYPOINT ["/go/src/app/main"]

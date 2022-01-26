@@ -3,7 +3,7 @@ on: [ push ]
 jobs:
   go:
     runs-on: ubuntu-latest
-    name: javascript
+    name: go sample
     steps:
       - name: Checkout
         uses: kumackey/hello-world-action@main
