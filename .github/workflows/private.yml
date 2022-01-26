@@ -29,3 +29,14 @@ jobs:
       # 「hello」ステップの出力を使用する
       - name: Get the output time
         run: echo "The time was ${{ steps.hello.outputs.time }}"
+  composite:
+    runs-on: ubuntu-latest
+    name: composite
+    steps:
+      - uses: actions/checkout@v2
+      - id: foo
+        uses: ./.github/actions/composite/
+        with:
+          who-to-greet: 'Mona the Octocat'
+      - run: echo random-number ${{ steps.foo.outputs.random-number }}
+        shell: bash
