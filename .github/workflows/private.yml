@@ -3,7 +3,7 @@ on: [ push ]
 jobs:
   javascript:
     runs-on: ubuntu-latest
-    name: A job to say hello
+    name: say hello by javascript
     steps:
       - name: Checkout
         uses: actions/checkout@v2
@@ -17,7 +17,7 @@ jobs:
         run: echo "The time was ${{ steps.hello.outputs.time }}"
   docker:
     runs-on: ubuntu-latest
-    name: A job to say hello
+    name: say hello by docker
     steps:
       - name: Checkout
         uses: actions/checkout@v2
