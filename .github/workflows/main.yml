@@ -1,7 +1,7 @@
 on: [ push ]
 
 jobs:
-  javascript:
+  go:
     runs-on: ubuntu-latest
     name: javascript
     steps:
