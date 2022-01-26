@@ -6,4 +6,4 @@ jobs:
     name: javascript
     steps:
       - name: Checkout
-        uses: kumackey/hello-world-action@v4
+        uses: kumackey/hello-world-action@main
